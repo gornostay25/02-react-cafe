@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.button {
+  padding: 14px 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:focus-visible {
+  outline: 2px solid #3b2a20;
+  outline-offset: 2px;
+}
+
+.good {
+  color: #ffffff;
+  background-color: #2f7d55;
+}
+
+.good:hover {
+  background-color: #276847;
+}
+
+.neutral {
+  color: #3b2a20;
+  background-color: #e6d8c6;
+}
+
+.neutral:hover {
+  background-color: #dbc9b2;
+}
+
+.bad {
+  color: #ffffff;
+  background-color: #b5462f;
+}
+
+.bad:hover {
+  background-color: #9a3b27;
+}
+
+.reset {
+  grid-column: 1 / -1;
+  color: #7a6555;
+  background-color: transparent;
+  border-color: #d9c8b4;
+}
+
+.reset:hover {
+  background-color: #efe4d6;
+}
